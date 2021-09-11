@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserWindow</class>
+ <widget class="QWidget" name="UserWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>963</width>
+    <height>556</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>用户界面</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>G:/VideoOfYouTube/用户界面.png</normaloff>G:/VideoOfYouTube/用户界面.png</iconset>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>917</width>
+     <height>516</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QPushButton" name="orderMealWindow">
+        <property name="minimumSize">
+         <size>
+          <width>29</width>
+          <height>41</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>29</width>
+          <height>41</height>
+         </size>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>订
+餐</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="shoppingCartWindow">
+        <property name="minimumSize">
+         <size>
+          <width>29</width>
+          <height>58</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>29</width>
+          <height>58</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>购
+物
+车</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="orderHistoryWindow">
+        <property name="maximumSize">
+         <size>
+          <width>31</width>
+          <height>91</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>历
+史
+订
+单</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="personInformation">
+        <property name="minimumSize">
+         <size>
+          <width>31</width>
+          <height>91</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>31</width>
+          <height>91</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>个
+人
+资
+料</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="dishbuy">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QComboBox" name="searchway">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;微软雅黑&quot;;
+background-color: rgba(170, 255, 255, 100);</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>查询饭菜</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>查询餐馆</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>查询区域</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="orderway">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;微软雅黑&quot;;
+background-color: rgba(170, 255, 255, 100);</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>默认</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>按价格排序</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>按评分排序</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>按销量排序</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>按剩余数量排序</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>按上架时间排序</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="searchline">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(170, 255, 255, 100);
+color: rgb(255, 170, 255);
+color: rgb(85, 0, 255);</string>
+                </property>
+                <property name="placeholderText">
+                 <string>请输入想要搜索的功能</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="searchbutton">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+                </property>
+                <property name="text">
+                 <string>搜索</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>G:/VideoOfYouTube/搜索.png</normaloff>G:/VideoOfYouTube/搜索.png</iconset>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QScrollArea" name="scrollArea">
+              <property name="minimumSize">
+               <size>
+                <width>611</width>
+                <height>381</height>
+               </size>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>647</width>
+                 <height>448</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="minimumSize">
+                <size>
+                 <width>171</width>
+                 <height>141</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>171</width>
+                 <height>141</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap>image/鱼香肉丝.jpeg</pixmap>
+               </property>
+               <property name="scaledContents">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="dishnamelabel">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+               </property>
+               <property name="text">
+                <string>菜名</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="togetherslabel">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+               </property>
+               <property name="text">
+                <string>原料</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="tastelabel">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+               </property>
+               <property name="text">
+                <string>口味</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="pricelabel">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+               </property>
+               <property name="text">
+                <string>价格</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="soldoutlabel">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+               </property>
+               <property name="text">
+                <string>已售</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="rest">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+               </property>
+               <property name="text">
+                <string>剩余</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="restnamelabel">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+               </property>
+               <property name="text">
+                <string>餐馆名</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="lookCommentButton">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+               </property>
+               <property name="text">
+                <string>查看评价</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>G:/VideoOfYouTube/查看评价@2x.png</normaloff>G:/VideoOfYouTube/查看评价@2x.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="addshoppingChartButton">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+               </property>
+               <property name="text">
+                <string>加入购物车</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>G:/VideoOfYouTube/加入购物车.png</normaloff>G:/VideoOfYouTube/加入购物车.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="purChaseButton">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+               </property>
+               <property name="text">
+                <string>购买</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>G:/VideoOfYouTube/购买.png</normaloff>G:/VideoOfYouTube/购买.png</iconset>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="goodlist">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QScrollArea" name="shopChart">
+            <property name="minimumSize">
+             <size>
+              <width>851</width>
+              <height>391</height>
+             </size>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_3">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>849</width>
+               <height>389</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QPushButton" name="refreshButton">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+              </property>
+              <property name="text">
+               <string>刷新</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>G:/VideoOfYouTube/刷新 (1).png</normaloff>G:/VideoOfYouTube/刷新 (1).png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="selectAll">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+              </property>
+              <property name="text">
+               <string>全选</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>G:/VideoOfYouTube/全选.png</normaloff>G:/VideoOfYouTube/全选.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="deleteSelect">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+              </property>
+              <property name="text">
+               <string>删除所选</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>G:/VideoOfYouTube/删除所选内容.png</normaloff>G:/VideoOfYouTube/删除所选内容.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="buyChartButton">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+              </property>
+              <property name="text">
+               <string>购买</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>G:/VideoOfYouTube/购买.png</normaloff>G:/VideoOfYouTube/购买.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="orderlist">
+       <widget class="QScrollArea" name="historyOrderList">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>881</width>
+          <height>461</height>
+         </rect>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>879</width>
+           <height>459</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page">
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>60</y>
+          <width>431</width>
+          <height>331</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QLabel" name="personId">
+             <property name="minimumSize">
+              <size>
+               <width>209</width>
+               <height>26</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+             </property>
+             <property name="text">
+              <string>账户id</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="personname">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+             </property>
+             <property name="text">
+              <string>昵称</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="personsex">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+             </property>
+             <property name="text">
+              <string>性别</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="personphonenum">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+             </property>
+             <property name="text">
+              <string>电话</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="personemail">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+             </property>
+             <property name="text">
+              <string>邮箱</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="personadress">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+             </property>
+             <property name="text">
+              <string>住址</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="alterpersonInfo">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+           </property>
+           <property name="text">
+            <string>修改</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>G:/VideoOfYouTube/_修改订单 (1).png</normaloff>G:/VideoOfYouTube/_修改订单 (1).png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="backgif1">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>290</y>
+          <width>211</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="priceRecord">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>620</y>
+     <width>72</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>-10</y>
+     <width>1031</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>C:/Users/wx/Pictures/pixiv/u=1922929558,2025968276&amp;fm=26&amp;fmt=auto&amp;gp=0.webp</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>label_2</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>priceRecord</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

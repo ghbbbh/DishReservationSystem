@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RestRegisterWindow</class>
+ <widget class="QWidget" name="RestRegisterWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>398</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>350</width>
+    <height>398</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>350</width>
+    <height>398</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>注册餐厅</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>G:/VideoOfYouTube/酒店餐厅-50.png</normaloff>G:/VideoOfYouTube/酒店餐厅-50.png</iconset>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>311</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>餐  馆 名</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="restname">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(170, 255, 255, 100);</string>
+        </property>
+        <property name="placeholderText">
+         <string>请输入餐馆的名称</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>起送价格</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="startprice">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(170, 255, 255, 100);</string>
+        </property>
+        <property name="placeholderText">
+         <string>请输入起送价格</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>配  送  费</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="sendprice">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(170, 255, 255, 100);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>请输入配送费</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>所在区域</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="localBlock">
+        <property name="minimumSize">
+         <size>
+          <width>111</width>
+          <height>21</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(170, 255, 255, 100);</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>枝江区</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>昌平区</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>海淀区</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>开店时间</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="startHour">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(170, 255, 255, 100);</string>
+        </property>
+        <property name="placeholderText">
+         <string>小时（24制）</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="startMin">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(170, 255, 255, 100);</string>
+        </property>
+        <property name="placeholderText">
+         <string>分钟</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>闭店时间</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="endHour">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(170, 255, 255, 100);</string>
+        </property>
+        <property name="placeholderText">
+         <string>小时（24制）</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="endMin">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(170, 255, 255, 100);</string>
+        </property>
+        <property name="placeholderText">
+         <string>分钟</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QPushButton" name="clearButton">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>清除</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>G:/VideoOfYouTube/清除.png</normaloff>G:/VideoOfYouTube/清除.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_9">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="regiButton">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>确定</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>G:/VideoOfYouTube/确定.png</normaloff>G:/VideoOfYouTube/确定.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>0</y>
+     <width>361</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>image/b9f6a04a78a27cb5a41b360ffd9d5fba.jpeg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>label_7</zorder>
+  <zorder>layoutWidget</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

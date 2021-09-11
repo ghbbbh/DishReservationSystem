@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddComment</class>
+ <widget class="QWidget" name="AddComment">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>378</width>
+    <height>291</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>添加评论</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>G:/VideoOfYouTube/评论.png</normaloff>G:/VideoOfYouTube/评论.png</iconset>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>340</width>
+     <height>265</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>评分</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QComboBox" name="scorecombo">
+          <property name="minimumSize">
+           <size>
+            <width>81</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 10pt &quot;微软雅黑&quot;;
+background-color: rgba(170, 255, 255, 100);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>评价</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="commentEdit">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(170, 255, 255, 100);</string>
+          </property>
+          <property name="placeholderText">
+           <string>请输入您的评价，不超过25个字</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>清除</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>G:/VideoOfYouTube/清除.png</normaloff>G:/VideoOfYouTube/清除.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>提交</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>G:/VideoOfYouTube/提交 (1).png</normaloff>G:/VideoOfYouTube/提交 (1).png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>-9</x>
+     <y>-6</y>
+     <width>451</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>C:/Users/wx/Pictures/pixiv/u=1922929558,2025968276&amp;fm=26&amp;fmt=auto&amp;gp=0.webp</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>label_3</zorder>
+  <zorder>layoutWidget</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

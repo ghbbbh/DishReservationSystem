@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminWindow</class>
+ <widget class="QWidget" name="AdminWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>980</width>
+    <height>542</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AdminWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(0, 0, 0, 0);</string>
+  </property>
+  <widget class="QWidget" name="widget_4" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>961</width>
+     <height>521</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget_3" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QComboBox" name="tableState">
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;微软雅黑&quot;;
+background-color: rgba(170, 255, 255, 100);</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>菜单表</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>销售表</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QComboBox" name="comboBox">
+            <property name="styleSheet">
+             <string notr="true">font: 10pt &quot;微软雅黑&quot;;
+background-color: rgba(170, 255, 255, 100);</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>默认</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>按销量升序</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>按销量降序</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>按创建时间升序</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>按创建时间降序</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>按价格升序</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>按价格降序</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>按评分升序</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>按评分降序</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgba(170, 255, 255, 100);</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="searchButton">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>image/搜索--1.png</normaloff>image/搜索--1.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+         </property>
+         <property name="text">
+          <string>刷新</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>G:/VideoOfYouTube/刷新 (1).png</normaloff>G:/VideoOfYouTube/刷新 (1).png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_2" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="alterButton">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+            </property>
+            <property name="text">
+             <string>修改菜品</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>G:/VideoOfYouTube/_修改订单.png</normaloff>G:/VideoOfYouTube/_修改订单.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="addButton">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+            </property>
+            <property name="text">
+             <string>添加菜品</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>G:/VideoOfYouTube/添加.png</normaloff>G:/VideoOfYouTube/添加.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="deleteButton">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+            </property>
+            <property name="text">
+             <string>删除菜品</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>G:/VideoOfYouTube/删除.png</normaloff>G:/VideoOfYouTube/删除.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableView" name="table">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+border-left-color: rgba(255, 255, 255, 0);
+color: rgb(0, 255, 255);</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+   <zorder>table</zorder>
+   <zorder>widget_3</zorder>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>-10</y>
+     <width>1021</width>
+     <height>591</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>C:/Users/wx/Pictures/pixiv/u=1922929558,2025968276&amp;fm=26&amp;fmt=auto&amp;gp=0.webp</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>widget_4</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

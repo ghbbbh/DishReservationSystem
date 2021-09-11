@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CheckCommentWindow</class>
+ <widget class="QWidget" name="CheckCommentWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>443</width>
+    <height>414</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>查看评论</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>G:/VideoOfYouTube/查看.png</normaloff>G:/VideoOfYouTube/查看.png</iconset>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>0</y>
+     <width>353</width>
+     <height>398</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableView" name="commenttable">
+      <property name="minimumSize">
+       <size>
+        <width>351</width>
+        <height>361</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+border-left-color: rgba(255, 255, 255, 0);
+color: rgb(0, 255, 255);</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="backButton">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 255);</string>
+      </property>
+      <property name="text">
+       <string>退出</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>G:/VideoOfYouTube/退出.png</normaloff>G:/VideoOfYouTube/退出.png</iconset>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>-39</x>
+     <y>-6</y>
+     <width>501</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>C:/Users/wx/Pictures/pixiv/u=1922929558,2025968276&amp;fm=26&amp;fmt=auto&amp;gp=0.webp</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>layoutWidget</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
